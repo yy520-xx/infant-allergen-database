@@ -1,0 +1,313 @@
+{
+  "database_version": "1.0.0",
+  "last_updated": "2026-09-22",
+  "description": "婴幼儿常见食品过敏原结构化数据库",
+  "allergens": [
+    {
+      "id": "milk",
+      "name_zh": "牛奶",
+      "name_en": "Milk / Cow's Milk",
+      "category": "乳制品",
+      "prevalence_infants": "2-3%",
+      "keywords_zh": [
+        "牛奶", "牛乳", "鲜奶", "纯牛奶", "全脂奶", "脱脂奶",
+        "奶粉", "乳粉", "全脂乳粉", "脱脂乳粉",
+        "酸奶", "酸乳", "发酵乳",
+        "奶酪", "芝士", "干酪", "奶油", "稀奶油", "淡奶油",
+        "黄油", "牛油", "乳脂", "无水黄油",
+        "乳清", "乳清蛋白", "乳清粉", "脱盐乳清",
+        "酪蛋白", "酪朊", "酪蛋白酸钠", "酪蛋白酸钙",
+        "乳糖", "乳白蛋白", "乳球蛋白",
+        "炼乳", "浓缩乳", "复原乳", "调制乳",
+        "奶味香精", "乳香香精"
+      ],
+      "keywords_en": [
+        "milk", "cow's milk", "dairy", "whey", "casein",
+        "lactose", "butter", "cream", "cheese", "yogurt",
+        "milk powder", "ghee", "curds", "rennet"
+      ],
+      "cross_reactivity": [
+        {"allergen": "goat_milk", "level": "high", "note": "羊奶与牛奶交叉过敏率>90%，不建议自行替代"},
+        {"allergen": "sheep_milk", "level": "high", "note": "绵羊奶与牛奶高度交叉反应"},
+        {"allergen": "horse_milk", "level": "high", "note": "马奶与牛奶交叉过敏率高"}
+      ],
+      "safe_alternatives": [
+        "深度水解配方奶粉（医生指导下）",
+        "氨基酸配方奶粉（医生指导下）",
+        "燕麦奶（纯燕麦，无添加乳制品）",
+        "大米奶/米浆",
+        "椰奶（无糖纯椰浆）",
+        "豆浆（确认宝宝无大豆过敏）"
+      ],
+      "hidden_sources": [
+        "蛋糕、饼干、面包等烘焙食品",
+        "巧克力、可可制品",
+        "人造奶油、植脂末（可能含乳成分）",
+        "浓汤宝、调味料（可能含乳粉增鲜）",
+        "婴幼儿米粉、磨牙棒（很多含乳粉）"
+      ]
+    },
+    {
+      "id": "egg",
+      "name_zh": "鸡蛋",
+      "name_en": "Egg",
+      "category": "禽蛋类",
+      "prevalence_infants": "1-2%",
+      "keywords_zh": [
+        "鸡蛋", "鲜蛋", "全蛋", "蛋黄", "蛋白",
+        "蛋液", "蛋粉", "全蛋粉", "蛋黄粉", "蛋白粉",
+        "咸蛋", "松花蛋", "皮蛋",
+        "蛋黄酱", "沙拉酱（可能含蛋）",
+        "面筋改良剂", "焙烤食品膨松剂"
+      ],
+      "keywords_en": [
+        "egg", "eggs", "egg white", "egg yolk",
+        "albumin", "ovalbumin", "ovomucoid",
+        "mayonnaise", "globulin", "livetin"
+      ],
+      "cross_reactivity": [
+        {"allergen": "chicken_meat", "level": "low", "note": "少数鸡蛋过敏宝宝对鸡肉也敏感"},
+        {"allergen": "other_bird_eggs", "level": "moderate", "note": "鸭蛋、鹅蛋与鸡蛋有一定交叉反应"}
+      ],
+      "safe_alternatives": [
+        "亚麻籽蛋替代（烘焙用）",
+        "香蕉泥替代（烘焙用）",
+        "市售无蛋烘焙产品"
+      ],
+      "hidden_sources": [
+        "蛋糕、饼干、面包",
+        "面条、挂面（部分加蛋）",
+        "蛋黄酱、沙拉酱",
+        "冰淇淋（含蛋）",
+        "部分肉丸、火腿肠"
+      ]
+    },
+    {
+      "id": "wheat",
+      "name_zh": "小麦/麸质",
+      "name_en": "Wheat / Gluten",
+      "category": "谷物类",
+      "prevalence_infants": "0.5%",
+      "keywords_zh": [
+        "小麦", "面粉", "小麦粉", "全麦粉", "高筋粉", "低筋粉",
+        "麸质", "面筋", "谷蛋白",
+        "面包", "面条", "馒头", "饼干", "蛋糕",
+        "麦片", "燕麦（普通燕麦多有小麦交叉污染）",
+        "酱油", "面酱", "豆瓣酱（小麦制成）"
+      ],
+      "keywords_en": [
+        "wheat", "flour", "bread", "gluten",
+        "semolina", "durum", "spelt", "kamut",
+        "triticale", "farina", "gravy"
+      ],
+      "cross_reactivity": [
+        {"allergen": "barley", "level": "high", "note": "大麦含麸质，交叉反应常见"},
+        {"allergen": "rye", "level": "high", "note": "黑麦含麸质，与小麦交叉反应"},
+        {"allergen": "oats", "level": "moderate", "note": "纯燕麦本身不含麸质，但常与小麦交叉污染"}
+      ],
+      "safe_alternatives": [
+        "大米粉",
+        "玉米粉",
+        "无麸质燕麦（认证GF）",
+        "藜麦",
+        "荞麦（不含麸质）",
+        "木薯粉"
+      ],
+      "hidden_sources": [
+        "酱油、蚝油等调味料",
+        "浓汤、酱汁（小麦勾芡）",
+        "方便面、速食面",
+        "部分加工肉制品（填馅/裹粉）"
+      ]
+    },
+    {
+      "id": "soy",
+      "name_zh": "大豆",
+      "name_en": "Soy / Soybean",
+      "category": "豆类",
+      "prevalence_infants": "0.5%",
+      "keywords_zh": [
+        "大豆", "黄豆", "毛豆",
+        "豆腐", "豆干", "腐竹", "豆浆", "豆奶",
+        "大豆油", "豆油",
+        "酱油", "生抽", "老抽",
+        "豆瓣酱", "豆豉", "味噌",
+        "大豆蛋白", "大豆粉", "豆粉",
+        "卵磷脂（大豆来源）", "大豆卵磷脂"
+      ],
+      "keywords_en": [
+        "soy", "soya", "soybean", "tofu", "tempeh",
+        "miso", "edamame", "soy lecithin",
+        "soy protein", "textured vegetable protein"
+      ],
+      "cross_reactivity": [
+        {"allergen": "other_legumes", "level": "low-moderate", "note": "与其他豆类（花生、豌豆、扁豆）有一定交叉反应风险"}
+      ],
+      "safe_alternatives": [
+        "大米奶/米浆",
+        "燕麦奶（无豆配方）",
+        "椰奶",
+        "杏仁奶（无坚果过敏时）"
+      ],
+      "hidden_sources": [
+        "卵磷脂（常用乳化剂）",
+        "植物油混合制品",
+        "人造肉、素肉制品",
+        "婴儿配方奶（部分豆基配方）"
+      ]
+    },
+    {
+      "id": "peanut",
+      "name_zh": "花生",
+      "name_en": "Peanut",
+      "category": "坚果/豆类",
+      "prevalence_infants": "0.3-1%",
+      "keywords_zh": [
+        "花生", "落花生", "长生果",
+        "花生油", "花生酱", "花生粉",
+        "花生碎", "花生米"
+      ],
+      "keywords_en": [
+        "peanut", "groundnut", "arachis oil",
+        "peanut butter", "goober"
+      ],
+      "cross_reactivity": [
+        {"allergen": "tree_nuts", "level": "moderate", "note": "约20-50%花生过敏者合并坚果过敏"},
+        {"allergen": "other_legumes", "level": "low", "note": "与其他豆类交叉反应率较低"}
+      ],
+      "safe_alternatives": [
+        "葵花籽酱",
+        "南瓜籽酱",
+        "大豆酱（无大豆过敏时）"
+      ],
+      "hidden_sources": [
+        "亚洲菜系（常含花生）",
+        "混合坚果制品",
+        "烘焙食品（可能含花生粉）",
+        "巧克力制品"
+      ]
+    },
+    {
+      "id": "tree_nuts",
+      "name_zh": "坚果",
+      "name_en": "Tree Nuts",
+      "category": "坚果类",
+      "prevalence_infants": "0.2-0.5%",
+      "keywords_zh": [
+        "核桃", "杏仁", "腰果", "榛子", "开心果",
+        "巴旦木", "夏威夷果", "碧根果", "松子",
+        "坚果", "混合坚果", "坚果酱", "坚果油",
+        "杏仁奶", "核桃油"
+      ],
+      "keywords_en": [
+        "almond", "walnut", "cashew", "hazelnut",
+        "pistachio", "macadamia", "pecan", "pine nut",
+        "brazil nut", "nut", "mixed nuts"
+      ],
+      "cross_reactivity": [
+        {"allergen": "peanut", "level": "moderate", "note": "与花生有交叉过敏风险"},
+        {"allergen": "other_tree_nuts", "level": "high", "note": "多种坚果之间交叉反应常见，建议全面规避"}
+      ],
+      "safe_alternatives": [
+        "种子酱（葵花籽、南瓜籽）",
+        "谷物奶（燕麦、大米）",
+        "椰奶"
+      ],
+      "hidden_sources": [
+        "马卡龙、牛轧糖",
+        "混合谷物棒",
+        "坚果风味酱料",
+        "巧克力涂层产品"
+      ]
+    },
+    {
+      "id": "fish",
+      "name_zh": "鱼类",
+      "name_en": "Fish",
+      "category": "水产类",
+      "prevalence_infants": "0.5%",
+      "keywords_zh": [
+        "鱼", "鱼肉", "鱼油", "鱼粉",
+        "三文鱼", "鳕鱼", "鲈鱼", "鲫鱼", "带鱼",
+        "金枪鱼", "沙丁鱼", "凤尾鱼",
+        "鱼露", "鱼酱"
+      ],
+      "keywords_en": [
+        "fish", "salmon", "cod", "tuna", "anchovy",
+        "sardine", "fish sauce", "fish oil", "gelatin (fish)"
+      ],
+      "cross_reactivity": [
+        {"allergen": "bony_fish", "level": "high", "note": "多数鱼类过敏者对多种鱼种交叉过敏"},
+        {"allergen": "shellfish", "level": "low", "note": "鱼类与甲壳类交叉反应较少"}
+      ],
+      "safe_alternatives": [
+        "植物性Omega-3（亚麻籽、奇亚籽）",
+        "藻类DHA",
+        "确认安全的个别鱼种"
+      ],
+      "hidden_sources": [
+        "鱼露（东南亚菜常用）",
+        "鱼油保健品",
+        "威廉酱、伍斯特酱（含凤尾鱼）",
+        "部分沙拉酱、披萨酱"
+      ]
+    },
+    {
+      "id": "shellfish",
+      "name_zh": "甲壳类海鲜",
+      "name_en": "Crustacean Shellfish",
+      "category": "水产类",
+      "prevalence_infants": "0.5%",
+      "keywords_zh": [
+        "虾", "蟹", "龙虾", "小龙虾",
+        "贝类", "扇贝", "牡蛎", "蛤蜊", "蛏子",
+        "鱿鱼", "章鱼", "墨鱼",
+        "海鲜酱", "XO酱"
+      ],
+      "keywords_en": [
+        "shrimp", "prawn", "crab", "lobster",
+        "crayfish", "clam", "oyster", "mussel",
+        "scallop", "squid", "octopus", "shellfish"
+      ],
+      "cross_reactivity": [
+        {"allergen": "other_shellfish", "level": "high", "note": "甲壳类之间交叉反应非常常见"},
+        {"allergen": "house_dust_mite", "level": "moderate", "note": "与尘螨有原肌球蛋白交叉反应"}
+      ],
+      "safe_alternatives": [
+        "其他蛋白质来源（禽肉、肉类）",
+        "确认安全的淡水鱼"
+      ],
+      "hidden_sources": [
+        "海鲜火锅汤底",
+        "调味料（海鲜味）",
+        "味精、鸡精（部分含海鲜提取物）"
+      ]
+    }
+  ],
+  "secondary_allergens": [
+    {
+      "id": "sesame",
+      "name_zh": "芝麻",
+      "name_en": "Sesame",
+      "keywords_zh": ["芝麻", "芝麻油", "香油", "芝麻酱", " Sesame"]
+    },
+    {
+      "id": "mustard",
+      "name_zh": "芥末",
+      "name_en": "Mustard",
+      "keywords_zh": ["芥末", "芥末酱", "黄芥末", "芥末粉"]
+    },
+    {
+      "id": "celery",
+      "name_zh": "芹菜",
+      "name_en": "Celery",
+      "keywords_zh": ["芹菜", "西芹", "芹菜籽", "芹菜粉"]
+    },
+    {
+      "id": "sulfite",
+      "name_zh": "亚硫酸盐",
+      "name_en": "Sulfites",
+      "keywords_zh": ["亚硫酸盐", "二氧化硫", "焦亚硫酸钠", "亚硫酸钠", "E220-E224"]
+    }
+  ]
+}
